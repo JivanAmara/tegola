@@ -38,11 +38,11 @@ before_deploy:
 
 deploy:
   provider: releases
-#  api_key:
-#    secure: GrkTzVjddIHB8MXfLloPgifJKrZuFptk9DzrrSSXAOxxBBqYnddg2WKAr2TfrPLQaSNdR84PaPN3FXW009W/CjclxM3mW9h9a/sFVlWtWOWd5u/szFPwn5JQKKt0D/EhScBUF9Jvyo4g28YxSR9rV/RnJne/B6pthJAFSrztHglC7XGkW9mSTH7aG68yIALoGeqHRIKT3DDHJPCm14EEXKq8oacJSX6SZyexBcBJRKj8S+/k3HoYDeKqvCC8oPHt1kPHXiSF/mZdeox0CQ+Q9B3cWPu6rFNbOjiLQriq9ayY/DxdZPVHdQ/nFkTpBQ3lwDLFL4X2jcT1V0jvNxJnExJOXV9lFtjvyExqr7quGHTMd4iJVeYOkWwEl8/cJJAoePIlKaGL5FDxLhlq1RscHOu25sd1DgmbhJMjlexxG/bXyJhV873kyv6JhIq+XniA2TxpaMMrut8MOBH76THbQr9yWpdf6GXs7NdRiK8yzS+L/hvXJO88NXegavCk8gGtWhHSLSJzYg5fVIo9QdghfRe8cLj2HcMehwzLyu3GRiWdm8TtNQ+PIp9qXxB+BIOfXN+Dx1ydVdlt8aghefONw9+0zDtrGZhWyORMHBCypXrTEmiGxlIfsR4QQxVpejd8DXi3i9CQou68ECuC51YqxhH49tfiE8Adh0WPKCklRnY=
-  #file:
+  api_key:
+    secure: secure: "iGPDK26BOmZQr6AOmOWmFdVIlj1Dq7MeRUdWq35tD3b6HoUr+0kVJ4tZzHsy/y24qvfOTqn6xutff10CssT+cmeqBtVFOoyG907Qsr3gGFefc4BFPBUSh6rx46ex3PMFz5gSAIqQ5joYeT2dWH5FLMTZ8GpUQ04SKQUWQtctxN/7uDnFHMB5zslHky2gz9Fwa+bwJj7hd6VeTqvzZ4Hn9Yjct/U/cyvyhBmlo+hf+iBq0YQMEYAQLt49PAzZK5yvE/Xl7IMWmdCOmEx8hSZ4jSjiFlAnW22E2p086Gp20k0nDxqRjcFCt3ZDNom/S2gSVFeybS/lRBvPzCZFU+r3AGyeT60emAdbzVLxRz727ZBZf6+WYM2La2vUFzd9vqSmyOGItKl/Eyvutv9bxXpy49Yo+DQ6faeCiwDurEygFN4h87W3KOwBV7QfD1WhMNeJi5Vkyp0C1WZaMiS7oDEYTIeERx+DPAQNkc90Btz3Bi62GrLRSi/TPFAzrA5/CQqYjGfqfvYTrkGO2y3Se/C2k/c8Y1Yt/cWjmj9a5YVSlJGAuTkaGTCGG0EfVAN2UULWD1zuN7DeFuEiaPqK3DBGIW7GyTYmOxG17ZxhNG2YLrytMhCJfJLIhK6ldQrtsxT6Ar7RZZ7/yyWlObw0fD+Mm8qPcPpps6wmk3RHgYagLzg="
+  file:
   #  - "tegola_darwin_386"
-  #  - "tegola_linux_386"
+    - "tegola_linux_386"
   #  - "tegola_netbsd_arm"
   #  - "tegola_darwin_amd64"
   #  - "tegola_linux_amd64"
