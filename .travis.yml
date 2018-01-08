@@ -30,8 +30,11 @@ install:
 
 before_deploy:
   - go get github.com/mitchellh/gox
-  - cd cmd/tegola/
+  - pushd cmd/tegola/
   - gox -ldflags "-w -X main.Version=$TRAVIS_TAG" -output "{{.Dir}}_{{.OS}}_{{.Arch}}"
+  - cd
+  - docker build -f docker/Dockerfile -t tegola:$TRAVIS_TAG
+  - docker push tegola:$TRAVIS_TAG
 
 deploy:
   provider: releases
