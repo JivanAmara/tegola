@@ -39,7 +39,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: secure: "iGPDK26BOmZQr6AOmOWmFdVIlj1Dq7MeRUdWq35tD3b6HoUr+0kVJ4tZzHsy/y24qvfOTqn6xutff10CssT+cmeqBtVFOoyG907Qsr3gGFefc4BFPBUSh6rx46ex3PMFz5gSAIqQ5joYeT2dWH5FLMTZ8GpUQ04SKQUWQtctxN/7uDnFHMB5zslHky2gz9Fwa+bwJj7hd6VeTqvzZ4Hn9Yjct/U/cyvyhBmlo+hf+iBq0YQMEYAQLt49PAzZK5yvE/Xl7IMWmdCOmEx8hSZ4jSjiFlAnW22E2p086Gp20k0nDxqRjcFCt3ZDNom/S2gSVFeybS/lRBvPzCZFU+r3AGyeT60emAdbzVLxRz727ZBZf6+WYM2La2vUFzd9vqSmyOGItKl/Eyvutv9bxXpy49Yo+DQ6faeCiwDurEygFN4h87W3KOwBV7QfD1WhMNeJi5Vkyp0C1WZaMiS7oDEYTIeERx+DPAQNkc90Btz3Bi62GrLRSi/TPFAzrA5/CQqYjGfqfvYTrkGO2y3Se/C2k/c8Y1Yt/cWjmj9a5YVSlJGAuTkaGTCGG0EfVAN2UULWD1zuN7DeFuEiaPqK3DBGIW7GyTYmOxG17ZxhNG2YLrytMhCJfJLIhK6ldQrtsxT6Ar7RZZ7/yyWlObw0fD+Mm8qPcPpps6wmk3RHgYagLzg="
+    secure: "iGPDK26BOmZQr6AOmOWmFdVIlj1Dq7MeRUdWq35tD3b6HoUr+0kVJ4tZzHsy/y24qvfOTqn6xutff10CssT+cmeqBtVFOoyG907Qsr3gGFefc4BFPBUSh6rx46ex3PMFz5gSAIqQ5joYeT2dWH5FLMTZ8GpUQ04SKQUWQtctxN/7uDnFHMB5zslHky2gz9Fwa+bwJj7hd6VeTqvzZ4Hn9Yjct/U/cyvyhBmlo+hf+iBq0YQMEYAQLt49PAzZK5yvE/Xl7IMWmdCOmEx8hSZ4jSjiFlAnW22E2p086Gp20k0nDxqRjcFCt3ZDNom/S2gSVFeybS/lRBvPzCZFU+r3AGyeT60emAdbzVLxRz727ZBZf6+WYM2La2vUFzd9vqSmyOGItKl/Eyvutv9bxXpy49Yo+DQ6faeCiwDurEygFN4h87W3KOwBV7QfD1WhMNeJi5Vkyp0C1WZaMiS7oDEYTIeERx+DPAQNkc90Btz3Bi62GrLRSi/TPFAzrA5/CQqYjGfqfvYTrkGO2y3Se/C2k/c8Y1Yt/cWjmj9a5YVSlJGAuTkaGTCGG0EfVAN2UULWD1zuN7DeFuEiaPqK3DBGIW7GyTYmOxG17ZxhNG2YLrytMhCJfJLIhK6ldQrtsxT6Ar7RZZ7/yyWlObw0fD+Mm8qPcPpps6wmk3RHgYagLzg="
   file:
   #  - "tegola_darwin_386"
     - "tegola_linux_386"
@@ -58,6 +58,7 @@ deploy:
   #  - "tegola_windows_amd64.exe"
   skip_cleanup: true
   on:
+    branch: issue-245_Add_docker_to_travis
 #    tags: true
     condition: $TRAVIS_GO_VERSION =~ ^1\.9\.[0-9]+$
 
